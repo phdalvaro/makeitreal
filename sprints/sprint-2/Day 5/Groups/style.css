@@ -1,0 +1,41 @@
+/* Estilos básicos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#expense-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos de la lista de gastos */
+li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact List</h1>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <form id="contacts" class="contact-form" aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" class="input-field" aria-label="Name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Phone" class="input-field" aria-label="Phone">
+
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" aria-required="true">
+                    I accept the terms
+                </label>
+
+                <button type="submit" id="addContactBtn" class="btn add-btn">Add Contact</button>
+            </form>
+        </section>
+
+        <section class="filter-section">
+            <div class="filter">
+                <label for="filter">Filter:</label>
+                <input type="text" id="filter" placeholder="Filter contacts" class="input-field" aria-label="Filter contacts">
+                <button type="button" id="clearFilterBtn" class="btn clear-filter-btn">Clear Filter</button>
+            </div>
+        </section>
+
+        <section>
+            <ul id="contactList" class="contact-list" aria-label="Contact List"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
